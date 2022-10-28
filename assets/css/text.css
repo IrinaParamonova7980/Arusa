@@ -1,0 +1,27 @@
+.central-second-title{
+    font-size: 36px;
+    line-height: 42px;
+    
+    letter-spacing: -0.02em;
+
+    color: #323334;
+    
+}
+
+.main-text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    
+    color: #323334;
+}
+
+@media (min-width: 768px) {
+    .central-second-title{
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 100%;
+        
+        letter-spacing: -0.05em;
+    }
+}
