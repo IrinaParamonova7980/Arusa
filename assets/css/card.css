@@ -1,0 +1,48 @@
+.card{
+    display: flex;
+    flex-direction: column;
+
+    width: 50vw;
+    padding: 8px;
+}
+
+.card-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    
+    letter-spacing: 0.1em;
+}
+
+.card-image-container{
+    width: 100%;
+}
+
+.card-image-container__image{
+    max-width: 100%;
+    width: 100%;
+}
+
+.card_grey-borders{
+    border: 1px solid #DFDEDB;
+}
+
+@media (min-width: 768px) {
+    .card{
+        width: 20vw;
+        padding: 10px;
+    }
+
+    .card-description{
+        flex-direction: row;
+    }
+
+    .card_grey-borders{
+        border: none;
+    }
+
+}

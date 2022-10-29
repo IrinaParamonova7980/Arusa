@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/css/Normalize.css" rel="stylesheet" />
-    <link href="assets/css/button.css" rel="stylesheet" />
+    <link href="assets/css/buttons.css" rel="stylesheet" />
     <link href="assets/css/containers.css" rel="stylesheet" />
     <link href="assets/css/text.css" rel="stylesheet" />
+    <link href="assets/css/images.css" rel="stylesheet" />
+    <link href="assets/css/card.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat&family=Oswald&family=Play&family=Playfair+Display:ital,wght@1,600&family=Roboto+Slab:wght@300&family=Roboto:wght@300&family=Vollkorn&display=swap"
+      rel="stylesheet"
+    />
     <title>Arusa</title>
   </head>
-  <body>
+  <body class="container">
+    <!--Второй блок--->
     <section class="central-positioning-section">
       <div class="central-positioning-section-content">
-        <h2 class="central-second-title">Creating <i>perfect</i> lines <br> and imposing presence</h2>
+        <h2 class="central-second-title">
+          Creating <i>perfect</i> lines <br />
+          and imposing presence
+        </h2>
         <p class="main-text">
           Developed the concept of exclusivity, a Arusa features timeless
           furniture, with natural fabrics, curved lines, plenty of mirrors and
@@ -23,6 +35,66 @@
         </p>
         <button class="button">READ ABOUT US</button>
       </div>
+    </section>
+    <!--Первая лента товаров-->
+    <section class="product-feed-white">
+      <div class="product-feed-white__title enjoy-title">
+        Enjoy our feature products
+      </div>
+
+      <div class="product-feed-white__card-1 card card_grey-borders">
+        <div class="card-image-container">
+          <img
+            class="card-image-container__image"
+            src="assets/images/block-3_blanket.png"
+            alt="product"
+          />
+        </div>
+        <div class="card-description">
+          <p>NATIVE IRON CHAIR</p>
+          <p>$4,990</p>
+        </div>
+      </div>
+      <div class="product-feed-white__card-2 card card_grey-borders">
+        <div class="card-image-container">
+          <img
+            class="card-image-container__image"
+            src="assets/images/block-3_lamp.png"
+            alt="product"
+          />
+        </div>
+        <div class="card-description">
+          <p>CENTURY DASHE</p>
+          <p>$1,799</p>
+        </div>
+      </div>
+      <div class="product-feed-white__card-3 card card_grey-borders">
+        <div class="card-image-container">
+          <img
+            class="card-image-container__image"
+            src="assets/images/block-3_armchair.png"
+            alt="product"
+          />
+        </div>
+        <div class="card-description">
+          <p>NATIVE LIGHT CHAIR</p>
+          <p>$4,990</p>
+        </div>
+      </div>
+      <div class="product-feed-white__card-4 card card_grey-borders">
+        <div class="card-image-container">
+          <img
+            class="card-image-container__image"
+            src="assets/images/block-3_pillows.png"
+            alt="product"
+          />
+        </div>
+        <div class="card-description">
+          <p>PAOLA WOOD LAMP</p>
+          <p>$5,990</p>
+        </div>
+      </div>
+    <button class="product-feed-white__shop-all shop-all__button">SHOP ALL</button>  
     </section>
   </body>
 </html>

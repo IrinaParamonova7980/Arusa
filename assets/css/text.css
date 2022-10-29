@@ -1,10 +1,19 @@
+.container{
+    font-family: "Roboto", "Times New Roman", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #323334;
+}
+
 .central-second-title{
     font-size: 36px;
     line-height: 42px;
     
     letter-spacing: -0.02em;
 
-    color: #323334;
+    margin:0;
     
 }
 
@@ -12,8 +21,15 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
+}
+
+.enjoy-title{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
     
-    color: #323334;
+    text-align: center;
+    letter-spacing: -0.02em;
 }
 
 @media (min-width: 768px) {
