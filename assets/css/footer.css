@@ -89,10 +89,15 @@
   display: block;
   margin: auto;
 }
+.image-footer__margins {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 .author {
   grid-row: 3/4;
   grid-column: 1/5;
-  justify-self: center;
+  margin: auto;
 }
 @media screen and (max-width: 767px) {
   .author {
@@ -100,7 +105,6 @@
     grid-column: 1/3;
   }
 }
-
 .nav__list {
   padding-left: 48px;
 }
