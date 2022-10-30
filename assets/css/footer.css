@@ -5,9 +5,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 178px 60% 9% 1fr;
   background-color: #384353;
-  font-family: "Roboto", "Times New Roman", serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Neue Montreal", "Times New Roman", serif;
   font-size: 12px;
   line-height: 14px;
   color: #f5f4f3;
