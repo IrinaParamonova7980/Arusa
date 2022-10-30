@@ -1,7 +1,8 @@
 .header {
   background-image: url(../images/fon_header.png);
   background-repeat: no-repeat;
-  max-width: 1440px;
+  background-size: 100%;
+  width: 100vw;
   height: 737px;
 }
 @media screen and (max-width: 767px) {
@@ -31,9 +32,7 @@
   margin-right: 16px;
 }
 .nav__text {
-  font-family: "Roboto", "Times New Roman", serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Neue Montreal", "Times New Roman", serif;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.1em;
