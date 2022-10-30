@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
 
-    width: 50vw;
+    width: 45vw;
     padding: 8px;
 }
 
@@ -20,11 +20,13 @@
 
 .card-image-container{
     width: 100%;
+    text-align: center;
 }
 
 .card-image-container__image{
     max-width: 100%;
     width: 100%;
+    text-align: center;
 }
 
 .card_grey-borders{
