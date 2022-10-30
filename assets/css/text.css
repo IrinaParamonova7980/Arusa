@@ -1,43 +1,49 @@
-.container{
-    font-family: "Roboto", "Times New Roman", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #323334;
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../font/PPNeueMontreal-Medium.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
 }
 
-.central-second-title{
-    font-size: 36px;
-    line-height: 42px;
-    
-    letter-spacing: -0.02em;
-
-    margin:0;
-    
+.container {
+  font-family: "Roboto", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #323334;
 }
 
-.main-text{
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 19px;
+.central-second-title {
+  font-size: 36px;
+  line-height: 42px;
+
+  letter-spacing: -0.02em;
+
+  margin: 0;
 }
 
-.enjoy-title{
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    
-    text-align: center;
-    letter-spacing: -0.02em;
+.main-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.enjoy-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+
+  text-align: center;
+  letter-spacing: -0.02em;
 }
 
 @media (min-width: 768px) {
-    .central-second-title{
-        font-weight: 400;
-        font-size: 72px;
-        line-height: 100%;
-        
-        letter-spacing: -0.05em;
-    }
+  .central-second-title {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 100%;
+
+    letter-spacing: -0.05em;
+  }
 }
