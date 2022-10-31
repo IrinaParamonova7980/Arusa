@@ -239,6 +239,41 @@
   }
 }
 
+/* 5-й блок (Фон+2 карточки) */
+.product-feed-background {
+  background-image: url(../images/block-5_fon-mobile.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.product-feed-background__card-1,
+.product-feed-background__card-2 {
+  display: none;
+}
+.card {
+  background: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .product-feed-background {
+    background-image: url(../images/block-5_fon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+  }
+
+  .product-feed-background__card-1 {
+    position: relative;
+    left: 7%;
+    top: 12%;
+  }
+
+  .product-feed-background__card-2 {
+    position: relative;
+    left: 70%;
+    top: 5%;
+  }
+}
+
 /* Вторая лента товаров */
 
 .product-feed-dark {
