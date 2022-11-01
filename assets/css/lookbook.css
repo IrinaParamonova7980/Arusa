@@ -1,0 +1,114 @@
+.lookbook{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    height: 210vh;
+    background-color: #384353;
+    color: #DFDEDB;
+}
+
+.lookbook-side{
+    display: none;
+}
+
+.lookbook-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+
+    height: 90%;
+    padding: 50px 60px;
+
+    border-left: 1px solid #DFDEDB;
+    border-right: 1px solid #DFDEDB;
+}
+
+.lookbook-title__title{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+
+    letter-spacing: -0.02em;
+    
+    color: #F5F4F3;
+}
+
+.lookbook-title__text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.lookbook-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lookbook-description-item{
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-top: 1px solid #DFDEDB;
+    border-bottom: 1px solid #DFDEDB;
+}
+
+.description-title{
+    display: none;
+}
+
+
+@media (min-width: 768px){
+    .lookbook{
+        grid-template-columns: 50px 1fr 1fr;
+        grid-template-rows: 1fr;
+    
+        height: 90vh;
+    }
+
+    .lookbook-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    
+        padding-bottom: 20px;
+    }
+    
+    .lookbook-side__title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        
+        letter-spacing: -0.02em;
+        
+        color: #F5F4F3;
+    
+        transform: rotate(-90deg);
+    }
+
+    .lookbook-title__title{
+        font-size: 56px;
+        line-height: 64px;
+    
+        letter-spacing: -0.04em;
+    }
+    
+
+    .description-title{
+        display: flex;
+    }
+
+}
+
+.product-feed-background-table__card-1{
+    display: none;
+}

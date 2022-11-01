@@ -1,0 +1,117 @@
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+
+    height: 150vh;
+}
+
+.details-empty-block{
+    display: none;
+}
+
+.details-description{
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 50px 10px;
+}
+
+.details-title{
+    display: none;
+}
+
+.details-image-container{
+    width: 100%;
+    text-align: center;
+}
+
+.details__image{
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.details-large-container{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.details-first-small-container{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.details-second-small-container{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.details-first-small-container{
+    content: url("../images/block-8_vase-mobile.png");
+}
+
+.details-second-small-container__image{
+    content: url("../images/block-8_leaves-mobile.png");
+}
+
+
+
+
+
+
+@media (min-width: 768px){
+    .details{
+        grid-template-columns: 50px 2fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+
+        height: 100vh;
+    }
+
+    .details-empty-block{
+        display: block;
+    }
+
+    .details-description{
+        grid-column: 2/4;
+        grid-row: 1/2;
+
+        padding: 100px 350px;
+    }
+
+    .details-title{
+        grid-column: 1/2;
+        grid-row: 2/4;
+
+        display: block;
+
+        transform: rotate(-90deg);
+    }
+
+    .details-large-container{
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    
+    .details-first-small-container{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    
+    .details-second-small-container{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .details-first-small-container{
+        content: url("../images/block-8_vase.png");
+    }
+    
+    .details-second-small-container__image{
+        content: url("../images/block-8_leaves.png");
+    }
+}

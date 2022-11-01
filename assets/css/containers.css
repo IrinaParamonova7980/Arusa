@@ -245,11 +245,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  height: 100vh;
 }
 .product-feed-background-table__card-1,
 .product-feed-background-table__card-2 {
   display: none;
 }
+
 .card {
   background: #ffffff;
 }
@@ -257,6 +259,7 @@
 @media (min-width: 768px) {
   .product-feed-background-table {
     background-image: url(../images/block-5_fon.png);
+    height: 130vh;
   }
 
   .product-feed-background-table__card-1 {
@@ -341,10 +344,12 @@
   background-image: url(../images/block-9_fon-mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  height: 80vh;
 }
 
 .product-chair__image {
   max-width: 100%;
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -353,6 +358,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
+    height: 100vh;
   }
 
   .product-chair-image-container {
@@ -362,6 +368,7 @@
   }
   .product-chair__image {
     width: 27vw;
+    display: block;
   }
 }
 
