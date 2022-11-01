@@ -51,6 +51,10 @@
     padding-bottom: 20px;
 }
 
+.lookbok-description-card{
+    content: url("../images/block-6_lookbook-mobile.png");
+}
+
 .lookbook-description-item{
     display: flex;
     justify-content: space-between;
@@ -107,8 +111,8 @@
         display: flex;
     }
 
+    .lookbok-description-card{
+    content: url("../images/block-6_lookbook-mobile.png");
 }
 
-.product-feed-background-table__card-1{
-    display: none;
 }
