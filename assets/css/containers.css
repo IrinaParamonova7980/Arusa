@@ -240,14 +240,14 @@
 }
 
 /* 5-й блок (Фон+2 карточки) */
-.product-feed-background {
+.product-feed-background-table {
   background-image: url(../images/block-5_fon-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 }
-.product-feed-background__card-1,
-.product-feed-background__card-2 {
+.product-feed-background-table__card-1,
+.product-feed-background-table__card-2 {
   display: none;
 }
 .card {
@@ -255,17 +255,17 @@
 }
 
 @media (min-width: 768px) {
-  .product-feed-background {
+  .product-feed-background-table {
     background-image: url(../images/block-5_fon.png);
   }
 
-  .product-feed-background__card-1 {
+  .product-feed-background-table__card-1 {
     margin-left: 7%;
     margin-top: 12%;
     margin-bottom: -4%;
   }
 
-  .product-feed-background__card-2 {
+  .product-feed-background-table__card-2 {
     margin-left: 70%;
     margin-bottom: 16%;
   }
@@ -334,6 +334,35 @@
 
   border-top: 1px solid #dfdedb;
   border-bottom: 1px solid #dfdedb;
+}
+
+/* Блок 9 */
+.product-chair {
+  background-image: url(../images/block-9_fon-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.product-chair__image {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .product-chair {
+    background-image: url(../images/block-9_fon.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  .product-chair-image-container {
+    margin-left: 36%;
+    margin-top: 11%;
+    margin-bottom: 21%;
+  }
+  .product-chair__image {
+    width: 27vw;
+  }
 }
 
 /* Footer */
