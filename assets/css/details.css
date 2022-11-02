@@ -1,9 +1,10 @@
 .details{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 270px 210px;
+    justify-content: center;
 
-    height: 150vh;
+    height: 130vh;
 }
 
 .details-empty-block{
@@ -25,42 +26,47 @@
     display: none;
 }
 
-.details-image-container{
-    width: 100%;
-    text-align: center;
-}
-
-.details__image{
-    max-width: 100%;
-    width: 100%;
-    text-align: center;
+.details-title-container__title{
+    display: none;
 }
 
 .details-large-container{
     grid-column: 1/3;
     grid-row: 2/3;
+
+    border: none;
+}
+
+.details-large-container__image{
+    justify-self: center;
+    align-self: center;
+
+    padding: 0px;
+
+    content: url("../images/block-8_chair-mobile.png");
+}
+
+.details-image-container_small{
+    padding: 5px;
 }
 
 .details-first-small-container{
     grid-column: 1/2;
     grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+
+    content: url("../images/block-8_vase-mobile.png");
 }
 
 .details-second-small-container{
     grid-column: 2/3;
     grid-row: 3/4;
-}
+    justify-self: center;
+    align-self: center;
 
-.details-first-small-container{
-    content: url("../images/block-8_vase-mobile.png");
-}
-
-.details-second-small-container__image{
     content: url("../images/block-8_leaves-mobile.png");
 }
-
-
-
 
 
 
@@ -69,11 +75,13 @@
         grid-template-columns: 50px 2fr 1fr;
         grid-template-rows: 2fr 1fr 1fr;
 
-        height: 100vh;
+        height: 130vh;
     }
 
     .details-empty-block{
         display: block;
+        border-right: 1px solid #DFDEDB;
+        border-bottom: 1px solid #DFDEDB;
     }
 
     .details-description{
@@ -81,37 +89,59 @@
         grid-row: 1/2;
 
         padding: 100px 350px;
+
+        border-bottom: 1px solid #DFDEDB;
     }
 
-    .details-title{
+    .details-title-container{
         grid-column: 1/2;
         grid-row: 2/4;
 
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
 
+        padding-bottom: 50px;
+        border-right: 1px solid #DFDEDB;    
+    }
+
+    .details-title-container__title{
+        display: inline;
         transform: rotate(-90deg);
     }
 
     .details-large-container{
         grid-column: 2/3;
         grid-row: 2/4;
+        justify-self: center;
+        align-self: center;
+
+        padding: 10px;
+    }
+
+    .details-large-container__image{
+        max-width: 95%;
+        content: url("../images/block-8_chair.png");
     }
     
+    .details-image-container_small{
+        padding: 10px;
+
+        border-left: 1px solid #DFDEDB;
+    }
+
     .details-first-small-container{
         grid-column: 3/4;
         grid-row: 2/3;
+        
+        content: url("../images/block-8_vase.png");
     }
     
     .details-second-small-container{
         grid-column: 3/4;
         grid-row: 3/4;
-    }
 
-    .details-first-small-container{
-        content: url("../images/block-8_vase.png");
-    }
-    
-    .details-second-small-container__image{
         content: url("../images/block-8_leaves.png");
     }
+
 }
