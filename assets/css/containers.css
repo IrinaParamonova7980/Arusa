@@ -251,6 +251,9 @@
 .product-feed-background-table__card-2 {
   display: none;
 }
+.card_color {
+  background-color: white;
+}
 
 @media (min-width: 768px) {
   .product-feed-background-table {
