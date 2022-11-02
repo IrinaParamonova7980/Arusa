@@ -373,6 +373,100 @@
   }
 }
 
+/* Блок 11 (See all articles) */
+.articles {
+  display: grid;
+  grid-template-rows: 62px repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  width: 100vw;
+}
+.article-title {
+  align-self: center;
+  text-align: center;
+  padding: 24px 0 24px 0;
+  border-top: 1px solid #dfdedb;
+  border-bottom: 1px solid #dfdedb;
+}
+.article-link {
+  font-family: "Neue Montreal", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: #323334;
+  text-decoration: none;
+}
+
+.article-content {
+  width: 91%;
+  justify-self: center;
+}
+.article-image {
+  max-width: 100%;
+}
+.h5 {
+  width: 343px;
+  height: 56px;
+  font-family: "Reckless Neue", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #323334;
+}
+.article-text {
+  font-family: "Neue Montreal", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #384353;
+}
+
+.article-content-first {
+  margin-top: 11px;
+}
+.article-more {
+  margin: 24px auto 24px 0;
+}
+
+@media (min-width: 768px) {
+  .articles {
+    display: grid;
+    grid-template-rows: 62px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .article-title {
+    grid-row: 1/2;
+    grid-column: 1/4;
+  }
+
+  .article-content {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 24px 11px 0 11px;
+  }
+
+  .article-content-first {
+    border-bottom: 1px solid #dfdedb;
+    border-right: 1px solid #dfdedb;
+    margin-top: 0;
+  }
+  .article-content-second {
+    border-bottom: 1px solid #dfdedb;
+  }
+  .article-content-third {
+    border-bottom: 1px solid #dfdedb;
+    border-left: 1px solid #dfdedb;
+  }
+  .article-more {
+    margin: 24px auto 70px 0;
+  }
+}
+
 /* Footer */
 
 .footer {
