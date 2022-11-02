@@ -252,10 +252,6 @@
   display: none;
 }
 
-.card {
-  background: #ffffff;
-}
-
 @media (min-width: 768px) {
   .product-feed-background-table {
     background-image: url(../images/block-5_fon.png);
@@ -278,7 +274,7 @@
 
 /* Вторая лента товаров */
 
-.product-feed-dark{
+.product-feed-dark {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 132px repeat(4, 1fr) 62px;
