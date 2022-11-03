@@ -373,7 +373,7 @@
   }
 }
 
-/* Блок 11 (See all articles) */
+/* Блок 11 (Articles) */
 .articles {
   display: grid;
   grid-template-rows: 62px repeat(3, 1fr);
@@ -464,6 +464,77 @@
   }
   .article-more {
     margin: 24px auto 70px 0;
+  }
+}
+
+/* Блок 12 (Call to Action) */
+.call-to-action-fon {
+  background-image: url(../images/block-12_fon-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.h2 {
+  font-family: "Reckless Neue", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #f5f4f3;
+  padding-top: 70%;
+  margin: 0;
+}
+
+.form {
+  margin: 48px 5% 0 5%;
+}
+
+.form__content {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #dfdedb;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #f5f4f3;
+  padding: 16px;
+
+  font-family: "Neue Montreal", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+  .call-to-action-fon {
+    background-image: url(../images/block-12_fon.png);
+    height: 100vh;
+    width: 92%;
+    margin: 84px 4% 8% 4%;
+  }
+
+  .h2 {
+    font-size: 72px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    padding-top: 20%;
+  }
+
+  .form {
+    width: 344px;
+    margin: 48px auto 0 auto;
+  }
+  .form__content {
+    width: 344px;
   }
 }
 
