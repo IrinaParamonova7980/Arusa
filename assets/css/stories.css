@@ -1,0 +1,77 @@
+.stories{
+    display: flex;
+    flex-direction: column;
+}
+
+.stories__title{
+    border: 1px solid #DFDEDB;
+}
+
+.stories-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 85vh;
+}
+
+.stories-main-side{
+    display: none;
+}
+
+.stories-main-container{
+    width: 100%;
+    text-align: center;
+}
+
+.stories-main-container__image{
+    max-width: 100%;
+    width: 100%;
+
+    padding: 10px;
+    content: url("../images/block-10_chairs-mobile.png");
+}
+
+.stories-main-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 90%;
+
+    padding: 25px 15px;
+}
+
+@media (min-width: 768px){
+    .stories-main{
+        flex-direction: row-reverse;
+
+        height: 65vh;
+    }
+
+    .stories-main-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        padding-bottom: 50px;
+        border-right: 1px solid #DFDEDB;  
+    }
+
+    .stories-main-side__title{
+        display: inline;
+        transform: rotate(-90deg);
+    }
+
+    .stories-main-container{
+        width: 45%;
+    }
+
+    .stories-main-container__image{
+        content: url("../images/block-10_sofa.png");
+    }
+
+    .stories-main-description{
+        width: 45%;
+    }
+}
