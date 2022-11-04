@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: center;
 
     height: 85vh;
 }
@@ -20,15 +21,15 @@
 }
 
 .stories-main-container{
-    width: 100%;
     text-align: center;
+    align-self: center;
+    padding: 10px;
 }
 
 .stories-main-container__image{
     max-width: 100%;
-    width: 100%;
-
-    padding: 10px;
+    object-fit: cover;
+    object-position: center;
     content: url("../images/block-10_chairs-mobile.png");
 }
 
@@ -61,10 +62,6 @@
     .stories-main-side__title{
         display: inline;
         transform: rotate(-90deg);
-    }
-
-    .stories-main-container{
-        width: 45%;
     }
 
     .stories-main-container__image{
