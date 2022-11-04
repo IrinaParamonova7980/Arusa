@@ -106,8 +106,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 132px 1fr 1fr 62px;
-
-  height: 120vh;
 }
 
 .product-feed-white__title {
@@ -121,18 +119,22 @@
 .product-feed-white__card-1 {
   grid-row: 2/3;
   grid-column: 1/2;
+  justify-self: center;
 }
 .product-feed-white__card-2 {
   grid-row: 2/3;
   grid-column: 2/3;
+  justify-self: center;
 }
 .product-feed-white__card-3 {
   grid-row: 3/4;
   grid-column: 1/2;
+  justify-self: center;
 }
 .product-feed-white__card-4 {
   grid-row: 3/4;
   grid-column: 2/3;
+  justify-self: center;
 }
 
 .product-feed-white__shop-all {
@@ -274,7 +276,6 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 132px repeat(4, 1fr) 62px;
 
-  height: 220vh;
   padding-bottom: 30px;
 
   background-color: #384353;
@@ -292,34 +293,42 @@
 .product-feed-dark__card-1 {
   grid-row: 2/3;
   grid-column: 1/2;
+  justify-self: center;
 }
 .product-feed-dark__card-2 {
   grid-row: 2/3;
   grid-column: 2/3;
+  justify-self: center;
 }
 .product-feed-dark__card-3 {
   grid-row: 3/4;
   grid-column: 1/2;
+  justify-self: center;
 }
 .product-feed-dark__card-4 {
   grid-row: 3/4;
   grid-column: 2/3;
+  justify-self: center;
 }
 .product-feed-dark__card-5 {
   grid-row: 4/5;
   grid-column: 1/2;
+  justify-self: center;
 }
 .product-feed-dark__card-6 {
   grid-row: 4/5;
   grid-column: 2/3;
+  justify-self: center;
 }
 .product-feed-dark__card-7 {
   grid-row: 5/6;
   grid-column: 1/2;
+  justify-self: center;
 }
 .product-feed-dark__card-8 {
   grid-row: 5/6;
   grid-column: 2/3;
+  justify-self: center;
 }
 
 .product-feed-dark__shop-all {
