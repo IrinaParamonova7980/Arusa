@@ -3,7 +3,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
 
-    height: 150vh;
     background-color: #384353;
     color: #DFDEDB;
 }
@@ -59,7 +58,26 @@
 }
 
 .lookbok-description-card{
+    height: 80%;
+    padding: 10px; 
+    margin: 10px;
+    
+    background-color: #E0E0E0;
+    color: #323334;
+}
+
+.lookbok-description-card-container{
+    text-align: center;
+    align-self: center;
+}
+
+.lookbok-description-card-container__image{
     content: url("../images/block-6_lookbook-mobile.png");
+}
+
+.card-description_lookbook{
+    flex-direction: row;
+    padding: 10px;
 }
 
 .lookbook-description-item{
@@ -82,8 +100,6 @@
     .lookbook{
         grid-template-columns: 50px 1fr 1fr;
         grid-template-rows: 1fr;
-    
-        height: 90vh;
     }
 
     .lookbook-side{
@@ -132,10 +148,24 @@
         display: flex;
     }
 
-    .lookbok-description-card__image{
+    .lookbok-description-card{
+        height: 80%;
+        padding: 10px; 
+        margin: 10px;
+    }
+
+    .lookbok-description-card-container__image{
         max-width: 100%;
 
-        content: url("../images/block-6_lookbook-mobile.png");
+        object-fit: cover;
+        object-position: center;
+
+        content: url("../images/block-6_lookbook.png");
     }
+
+    .card-description_lookbook{
+        padding: 0px;
+    }
+    
 
 }

@@ -33,18 +33,6 @@
     border: 1px solid #DFDEDB;
 }
 
-.card_lookbook{
-    width: 343px;
-    height: 561px;
-    
-    background-color: #E0E0E0;
-}
-
-.card-description_lookbook{
-    flex-direction: row;
-    color: #323334;
-}
-
 @media (min-width: 768px) {
     .card{
         width: 20vw;
@@ -57,13 +45,6 @@
 
     .card_grey-borders{
         border: none;
-    }
-
-    .card_lookbook{
-        width: 582px;
-        height: 561px;
-
-        margin: 20px;
     }
 
 }
