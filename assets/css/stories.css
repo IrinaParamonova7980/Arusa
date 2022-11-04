@@ -1,92 +1,100 @@
-.stories{
+.stories {
+  display: flex;
+  flex-direction: column;
+}
+
+.stories__title {
+  border: 1px solid #dfdedb;
+}
+
+.stories-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.stories-main-side {
+  display: none;
+}
+
+.stories-main-container {
+  text-align: center;
+  align-self: center;
+  padding: 10px;
+}
+
+.stories-main-container__image {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  content: url("../images/block-10_chairs-mobile.png");
+}
+
+.stories-main-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 90%;
+
+  padding: 25px 15px;
+}
+
+.stories-main-description__title {
+  font-family: "Reckless Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  letter-spacing: -0.02em;
+
+  color: #323334;
+}
+
+@media (min-width: 768px) {
+  .stories-main {
+    flex-direction: row-reverse;
+  }
+
+  .stories-main-side {
     display: flex;
     flex-direction: column;
-}
+    justify-content: flex-end;
+    width: 60px;
+    padding-bottom: 50px;
+    border-right: 1px solid #dfdedb;
 
-.stories__title{
-    border: 1px solid #DFDEDB;
-}
+    white-space: nowrap;
+  }
 
-.stories-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-}
+  .stories-main-side__title {
+    display: inline;
+    transform: rotate(-90deg);
 
-.stories-main-side{
-    display: none;
-}
-
-.stories-main-container{
-    text-align: center;
-    align-self: center;
-    padding: 10px;
-}
-
-.stories-main-container__image{
-    max-width: 100%;
-    object-fit: cover;
-    object-position: center;
-    content: url("../images/block-10_chairs-mobile.png");
-}
-
-.stories-main-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 90%;
-
-    padding: 25px 15px;
-}
-
-.stories-main-description__title{
-    font-family: 'Reckless Neue';
+    font-family: "Reckless Neue";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    
+    text-align: center;
     letter-spacing: -0.02em;
-    
     color: #323334;
-}
+  }
 
+  .stories-main-container__image {
+    content: url("../images/block-10_sofa.png");
+  }
 
-@media (min-width: 768px){
-    .stories-main{
-        flex-direction: row-reverse;
-    }
+  .stories-main-description {
+    width: 45%;
+  }
 
-    .stories-main-side{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+  .stories-main-description__title {
+    font-size: 56px;
+    line-height: 64px;
 
-        padding-bottom: 50px;
-        border-right: 1px solid #DFDEDB;  
-
-        white-space: nowrap;
-    }
-
-    .stories-main-side__title{
-        display: inline;
-        transform: rotate(-90deg);
-    }
-
-    .stories-main-container__image{
-        content: url("../images/block-10_sofa.png");
-    }
-
-    .stories-main-description{
-        width: 45%;
-    }
-
-    .stories-main-description__title{
-        font-size: 56px;
-        line-height: 64px;
-        
-        letter-spacing: -0.04em;
-    }
+    letter-spacing: -0.04em;
+  }
 }
