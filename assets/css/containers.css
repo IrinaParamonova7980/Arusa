@@ -178,7 +178,7 @@
   width: 90%;
   padding: 16px;
   margin: auto;
-  font-family: "Neue Montreal", "Times New Roman", serif;
+  font-family: "Neue Montreal", "Roboto", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -192,7 +192,7 @@
 
 .double-section-link__content {
   padding: 24px 0 0 16px;
-  font-family: "Neue Montreal", "Times New Roman", serif;
+  font-family: "Neue Montreal", "Roboto", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -384,7 +384,7 @@
   border-bottom: 1px solid #dfdedb;
 }
 .article-link {
-  font-family: "Neue Montreal", "Times New Roman", serif;
+  font-family: "Neue Montreal", "Roboto", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -413,7 +413,7 @@
   color: #323334;
 }
 .article-text {
-  font-family: "Neue Montreal", "Times New Roman", serif;
+  font-family: "Neue Montreal", "Roboto", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
