@@ -107,7 +107,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 132px 1fr 1fr 62px;
 
-  height: 120vh;
+  height: auto;
 }
 
 .product-feed-white__title {
@@ -278,7 +278,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 132px repeat(4, 1fr) 62px;
 
-  height: 220vh;
+  height: auto;
   padding-bottom: 30px;
 
   background-color: #384353;
