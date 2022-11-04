@@ -154,24 +154,8 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
-  .double-section {
-    flex-direction: row-reverse;
-    width: 100%;
-  }
-}
-
 .first-block {
   max-width: 100vw;
-}
-
-@media (min-width: 768px) {
-  .first-block {
-    width: 50%;
-  }
-  .second-block {
-    width: 50%;
-  }
 }
 
 .double-section__image {
@@ -179,13 +163,7 @@
   padding: 16px;
   margin: auto;
 }
-@media (min-width: 768px) {
-  .double-section__image {
-    width: 100%;
-    height: auto;
-    padding: 0;
-  }
-}
+
 .h4 {
   font-family: "Reckless Neue", "Times New Roman", serif;
   font-style: normal;
@@ -208,22 +186,8 @@
   color: #dfdedb;
 }
 
-@media (min-width: 768px) {
-  .double-section__text {
-    width: 50%;
-    padding: 0;
-  }
-}
-
 .double-section-link {
   margin-bottom: 60px;
-}
-
-@media (min-width: 768px) {
-  .double-section-link {
-    margin-bottom: 0;
-    margin-top: 24px;
-  }
 }
 
 .double-section-link__content {
@@ -238,12 +202,40 @@
 }
 
 @media (min-width: 768px) {
+  .double-section {
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .first-block {
+    width: 50%;
+  }
+  .second-block {
+    width: 50%;
+  }
+
+  .double-section__image {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .double-section__text {
+    width: 50%;
+    padding: 0;
+  }
+
+  .double-section-link {
+    margin-bottom: 0;
+    margin-top: 24px;
+  }
+
   .double-section-link__content {
     padding-left: 25%;
   }
 }
 
-/* 5-й блок (Фон+2 карточки) */
+/* 5-й блок (Фон + 2 карточки) */
 .product-feed-background-table {
   background-image: url(../images/block-5_fon-mobile.png);
   background-size: cover;
@@ -344,7 +336,7 @@
   border-bottom: 1px solid #dfdedb;
 }
 
-/* Блок 9 */
+/* Блок 9 (2 картинки без текста) */
 .product-chair {
   background-image: url(../images/block-9_fon-mobile.png);
   background-repeat: no-repeat;
