@@ -43,6 +43,19 @@
     padding: 25px 15px;
 }
 
+.stories-main-description__title{
+    font-family: 'Reckless Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    
+    letter-spacing: -0.02em;
+    
+    color: #323334;
+}
+
+
 @media (min-width: 768px){
     .stories-main{
         flex-direction: row-reverse;
@@ -57,6 +70,8 @@
 
         padding-bottom: 50px;
         border-right: 1px solid #DFDEDB;  
+
+        white-space: nowrap;
     }
 
     .stories-main-side__title{
@@ -70,5 +85,12 @@
 
     .stories-main-description{
         width: 45%;
+    }
+
+    .stories-main-description__title{
+        font-size: 56px;
+        line-height: 64px;
+        
+        letter-spacing: -0.04em;
     }
 }
