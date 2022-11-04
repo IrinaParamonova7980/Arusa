@@ -106,8 +106,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 132px 1fr 1fr 62px;
-
-  height: 120vh;
 }
 
 .product-feed-white__title {
@@ -274,7 +272,6 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 132px repeat(4, 1fr) 62px;
 
-  height: 220vh;
   padding-bottom: 30px;
 
   background-color: #384353;
@@ -659,8 +656,6 @@
   .product-feed-white {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 90px 1fr 62px;
-
-    height: 100%;
   }
 
   .product-feed-white__title {
@@ -699,8 +694,6 @@
   .product-feed-dark {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 90px repeat(2, 1fr) 62px;
-
-    height: 100%;
   }
 
   .product-feed-dark__title {
