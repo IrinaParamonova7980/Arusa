@@ -85,7 +85,6 @@
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -95,8 +94,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  width: 80%;
 }
 
 /* Заголовок ленты товаров */
@@ -655,12 +652,8 @@
 }
 
 @media (min-width: 768px) {
-  .central-positioning-section {
-    height: 50vh;
-  }
-
   .central-positioning-section-content {
-    width: 40%;
+    padding: 10px 20%;
   }
 
   /* Первая лента товаров */
