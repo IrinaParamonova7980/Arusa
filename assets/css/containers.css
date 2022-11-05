@@ -80,6 +80,8 @@
   }
 }
 
+/* Второй блок */
+
 .central-positioning-section {
   display: flex;
   justify-content: center;
@@ -94,6 +96,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.h2_color-stormy {
+  color: #323334;
+}
+
+.central-second-title__italic {
+  font-style: normal;
 }
 
 /* Заголовок ленты товаров */
@@ -482,20 +492,6 @@
   height: 100vh;
 }
 
-.h2 {
-  font-family: "Reckless Neue", "Times New Roman", serif;
-  font-style: normal;
-  font-weight: 400;
-
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: #f5f4f3;
-  padding-top: 70%;
-  margin: 0;
-}
-
 .form {
   margin: 48px 5% 0 5%;
 }
@@ -518,6 +514,15 @@
   letter-spacing: 0.1em;
 }
 
+.h2_position {
+  padding-top: 50%;
+  margin: 0;
+}
+
+.h2_color {
+  color: #f5f4f3;
+}
+
 @media (min-width: 768px) {
   .call-to-action-fon {
     background-image: url(../images/block-12_fon.png);
@@ -526,13 +531,9 @@
     margin: 84px 4% 8% 4%;
   }
 
-  .h2 {
-    font-size: 72px;
-    line-height: 100%;
-    text-align: center;
-    letter-spacing: -0.05em;
-
-    padding-top: 20%;
+  .h2_position {
+    padding-top: 15%;
+    margin: 0;
   }
 
   .form {
