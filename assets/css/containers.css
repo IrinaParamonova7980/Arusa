@@ -241,7 +241,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  height: 664px;
 }
 .product-feed-background-table__card-1,
 .product-feed-background-table__card-2 {
@@ -254,11 +254,12 @@
 @media (min-width: 768px) {
   .product-feed-background-table {
     background-image: url(../images/block-5_fon.png);
-    height: 130vh;
+    height: auto;
   }
 
   .product-feed-background-table__card-1 {
     display: block;
+    width: 20%;
     margin-left: 7%;
     margin-top: 12%;
     margin-bottom: -4%;
@@ -266,6 +267,7 @@
 
   .product-feed-background-table__card-2 {
     display: block;
+    width: 20%;
     margin-left: 70%;
     margin-bottom: 16%;
   }
@@ -382,7 +384,7 @@
   display: grid;
   grid-template-rows: 62px repeat(3, 1fr);
   grid-template-columns: 1fr;
-  width: 100vw;
+  width: 100%;
 }
 .article-title {
   align-self: center;

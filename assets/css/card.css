@@ -3,7 +3,6 @@
   flex-direction: column;
   box-sizing: border-box;
 
-  width: 45vw;
   padding: 8px;
 }
 
@@ -34,9 +33,13 @@
   border: 1px solid #dfdedb;
 }
 
+.card_grey-borders_bottom,
+.card-grey-borders_right {
+  border: 1px solid #dfdedb;
+}
+
 @media (min-width: 768px) {
   .card {
-    width: 24vw;
     padding: 24px 15px;
   }
 
@@ -45,6 +48,10 @@
   }
 
   .card_grey-borders {
+    border: none;
+  }
+  .card_grey-borders_bottom,
+  .card-grey-borders_right {
     border: none;
   }
 }
