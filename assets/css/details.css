@@ -1,147 +1,161 @@
-.details{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 270px 210px;
-    justify-content: center;
+.details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 270px 210px;
+  justify-content: center;
 }
 
-.details-empty-block{
-    display: none;
+.details-empty-block {
+  display: none;
 }
 
-.details-description{
-    grid-column: 1/3;
+.details-description {
+  grid-column: 1/3;
+  grid-row: 1/2;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 50px 10px;
+}
+.details-description__title {
+  font-family: "Reckless Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  color: #323334;
+
+  margin-bottom: 36px;
+}
+
+.details-title {
+  display: none;
+}
+
+.details-title-container__title {
+  display: none;
+}
+
+.details-large-container {
+  grid-column: 1/3;
+  grid-row: 2/3;
+
+  border: none;
+}
+
+.details-large-container__image {
+  justify-self: center;
+  align-self: center;
+
+  padding: 0px;
+
+  content: url("../images/block-8_chair-mobile.png");
+}
+
+.details-image-container_small {
+  padding: 5px;
+}
+
+.details-first-small-container {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+
+  content: url("../images/block-8_vase-mobile.png");
+}
+
+.details-second-small-container {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+
+  content: url("../images/block-8_leaves-mobile.png");
+}
+
+@media (min-width: 768px) {
+  .details {
+    grid-template-columns: 50px 2fr 1fr;
+    grid-template-rows: 1fr auto auto;
+  }
+
+  .details-empty-block {
+    display: block;
+    border-right: 1px solid #dfdedb;
+    border-bottom: 1px solid #dfdedb;
+  }
+
+  .details-description {
+    grid-column: 2/4;
     grid-row: 1/2;
+
+    padding: 10% 20%;
+
+    border-bottom: 1px solid #dfdedb;
+  }
+
+  .details-title-container {
+    grid-column: 1/2;
+    grid-row: 2/4;
 
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: flex-end;
 
-    padding: 50px 10px;
-}
+    font-family: "Reckless Neue", "Times New Roman", serif;
+    font-style: normal;
+    font-size: 24px;
 
-.details-title{
-    display: none;
-}
+    padding-bottom: 50px;
+    border-right: 1px solid #dfdedb;
+  }
 
-.details-title-container__title{
-    display: none;
-}
+  .details-description__title {
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+  }
 
-.details-large-container{
-    grid-column: 1/3;
+  .details-title-container__title {
+    display: inline;
+    transform: rotate(-90deg);
+  }
+
+  .details-large-container {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    align-self: center;
+
+    padding: 10px;
+  }
+
+  .details-large-container__image {
+    max-width: 95%;
+
+    content: url("../images/block-8_chair.png");
+  }
+
+  .details-image-container_small {
+    padding: 10px;
+
+    border-left: 1px solid #dfdedb;
+  }
+
+  .details-first-small-container {
+    grid-column: 3/4;
     grid-row: 2/3;
 
-    border: none;
-}
+    content: url("../images/block-8_vase.png");
+  }
 
-.details-large-container__image{
-    justify-self: center;
-    align-self: center;
-
-    padding: 0px;
-
-    content: url("../images/block-8_chair-mobile.png");
-}
-
-.details-image-container_small{
-    padding: 5px;
-}
-
-.details-first-small-container{
-    grid-column: 1/2;
+  .details-second-small-container {
+    grid-column: 3/4;
     grid-row: 3/4;
-    justify-self: center;
-    align-self: center;
 
-    content: url("../images/block-8_vase-mobile.png");
-}
-
-.details-second-small-container{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    justify-self: center;
-    align-self: center;
-
-    content: url("../images/block-8_leaves-mobile.png");
-}
-
-
-
-@media (min-width: 768px){
-    .details{
-        grid-template-columns: 50px 2fr 1fr;
-        grid-template-rows: 1fr auto auto;
-    }
-
-    .details-empty-block{
-        display: block;
-        border-right: 1px solid #DFDEDB;
-        border-bottom: 1px solid #DFDEDB;
-    }
-
-    .details-description{
-        grid-column: 2/4;
-        grid-row: 1/2;
-
-        padding: 10% 20%;
-
-        border-bottom: 1px solid #DFDEDB;
-    }
-
-    .details-title-container{
-        grid-column: 1/2;
-        grid-row: 2/4;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-
-        font-family: "Reckless Neue", "Times New Roman", serif;
-        font-style: normal;
-        font-size: 24px;
-
-        padding-bottom: 50px;
-        border-right: 1px solid #DFDEDB;    
-    }
-
-    .details-title-container__title{
-        display: inline;
-        transform: rotate(-90deg);
-    }
-
-    .details-large-container{
-        grid-column: 2/3;
-        grid-row: 2/4;
-        align-self: center;
-
-        padding: 10px;
-    }
-
-    .details-large-container__image{
-        max-width: 95%;
-
-        content: url("../images/block-8_chair.png");
-    }
-    
-    .details-image-container_small{
-        padding: 10px;
-
-        border-left: 1px solid #DFDEDB;
-    }
-
-    .details-first-small-container{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        
-        content: url("../images/block-8_vase.png");
-    }
-    
-    .details-second-small-container{
-        grid-column: 3/4;
-        grid-row: 3/4;
-
-        content: url("../images/block-8_leaves.png");
-    }
-
+    content: url("../images/block-8_leaves.png");
+  }
 }
